@@ -1,0 +1,22 @@
+ body{
+    background-color: black;
+ }
+.gallery {
+    display: flex; /* Use flexbox to make images align horizontally */
+    overflow-x: auto; /* Enable horizontal scrolling if there are too many images */
+    gap: 10px; /* Adjust the gap between images */
+    border: groove brown 10px;
+}
+
+.gallery div {
+    display: flex; /* Ensure images within the div are displayed horizontally */
+}
+
+.gallery span {
+    flex: 0 0 auto; /* Prevent images from growing or shrinking */
+}
+
+.gallery img {
+    max-width: 100%; /* Ensure images don't exceed their container width */
+    height: auto; /* Maintain the aspect ratio of the images */
+}
